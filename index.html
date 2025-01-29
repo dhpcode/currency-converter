@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
+
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <div class="container px-4">
+        <h1>Valyutalar kursi</h1>
+        <table class="table table-striped">
+            <thead>
+                <th>Valyuta nomi</th>
+                <th>Miqdori</th>
+            </thead>
+            <tbody class="table-body">
+                <tr>
+                    <td>USD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td>0.93</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Valyuta hisoblash</h2>
+        <div class="row p-3" id="converter">
+            <div class="col-6 col-sm-3">
+                <label for="from-currency" class="form-label">Base Currency</label>
+                <select id="from-currency" class="form-select"></select>
+            </div>
+            <div class="col-6 col-sm-3">
+                <label for="to-currency" class="form-label">Desired Currency</label>
+                <select id="to-currency" class="form-select"></select>
+            </div>
+            <div class="col-6 col-sm-3">
+                <label for="amount" class="form-label">Amount</label>
+                <input id="amount" type="number" class="form-control">
+            </div>
+            <div class="col-6 col-sm-3 d-flex align-items-end" >
+                <button class="btn btn-success" id="convert">Convert</button>
+                <h4 id="result" class="ms-2">Result: </h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
